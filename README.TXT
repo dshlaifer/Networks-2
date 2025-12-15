@@ -1,11 +1,10 @@
-Project: network-v2
-Authors: Michael Kölling and David J. Barnes
+Q 4. Removing extends Post removes the inheritance relationship in the class diagram, causing MessagePost
+to appear as an independent class, adding it back restores the inheritance and subclass relationship.
 
-This project is part of the material for chapter 8 of the book
+Q 5. MessagePost extends Post, so it automatically inherits all public methods of Post.
 
-   Objects First with Java - A Practical Introduction using BlueJ
-   Seventh edition
-   David J. Barnes and Michael Kölling
-
-It implements a second (partly improved) version of a news feed 
-for a social network.
+Q 6. The subclass accesses the author name by calling the inherited public getUserName()
+ method, demonstrating that non-private superclass methods are available without any special syntax.
+ 
+Q 7. Stepping through the constructor shows that the superclass
+ (Post) constructor runs first and initializes its fields before the subclass (MessagePost) initializes its own fields.
